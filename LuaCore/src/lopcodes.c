@@ -14,8 +14,6 @@
 #include "lopcodes.h"
 
 
-#ifdef LUA_OPNAMES
-
 const char *const luaP_opnames[] = {
   "MOVE",
   "LOADK",
@@ -54,7 +52,7 @@ const char *const luaP_opnames[] = {
   "CLOSURE"
 };
 
-#endif
+
 
 #define opmode(t,b,bk,ck,sa,k,m) (((t)<<OpModeT) | \
    ((b)<<OpModeBreg) | ((bk)<<OpModeBrk) | ((ck)<<OpModeCrk) | \
