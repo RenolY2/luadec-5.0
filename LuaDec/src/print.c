@@ -1,5 +1,8 @@
 /* luadec, based on luac */
 
+#pragma comment (lib, "LuaCore.lib")
+#pragma comment (lib, "LuaLib.lib")
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
